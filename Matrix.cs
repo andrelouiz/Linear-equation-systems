@@ -91,7 +91,7 @@ namespace Linear_equation_systems
         {
             CheckMatrix();
 
-            for (int k = 0; k < equationsList.Count; k++) //makes every number in main diagonal = 1, everything under it = 0
+            for (int k = 0; k < equationsList.Count; k++)
             {
                 CorrectOrder(k);
                 equationsList[k].Divide(equationsList[k].Parameters[k]);
@@ -103,7 +103,7 @@ namespace Linear_equation_systems
                 }
             }
 
-            for (int k = equationsList.Count - 1; k >= 0; k--) // makes everything above main diagonal = 0, so we have identity matrix and answers
+            for (int k = equationsList.Count - 1; k >= 0; k--) 
             {
                 for (int i = k - 1; i >= 0; i--)
                 {

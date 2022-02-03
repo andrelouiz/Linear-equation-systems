@@ -9,7 +9,7 @@ namespace Linear_equation_systems
     public class Equation
     {
         public string InputString;
-        public List<double> Parameters = new List<double>(); //Actually contains parameters AND right-hand side constant
+        public List<double> Parameters = new List<double>(); 
         public List<bool> ParameterSigns = new List<bool>();
 
         public Equation(string inputString)
@@ -74,7 +74,7 @@ namespace Linear_equation_systems
                 Parameters[i] = eq.Parameters[i];
             }
         }
-        public void Subtract(Equation eq) // does not change the values 
+        public void Subtract(Equation eq)  
         {
             for (int i = 0; i < eq.Parameters.Count; i++)
             {
